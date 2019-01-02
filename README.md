@@ -2,7 +2,7 @@
 inetman28 Infra repository
 
 bastion_IP = 35.205.225.172
-someinternalhost = 10.132.0.3
+someinternalhost_IP = 10.132.0.3
 
 # добавить ключ в ssh-agent
 ssh-add ~/.ssh/github
