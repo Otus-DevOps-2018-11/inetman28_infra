@@ -2,9 +2,11 @@
 inetman28 Infra repository
 
 bastion_IP = 35.205.225.172
+
 someinternalhost_IP = 10.132.0.3
 
 testapp_IP = 35.199.179.182
+
 testapp_port = 9292
 
 # добавить ключ в ssh-agent
