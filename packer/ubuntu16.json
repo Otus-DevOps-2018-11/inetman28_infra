@@ -1,14 +1,29 @@
 {
+    "variables": {
+	    "projectid": null,
+	    "sourceimagefamily": null,
+	    "machinetype": null,
+	    "imagedescription": null,
+   	    "disksize": null,
+   	    "disktype": null,
+   	    "imgtags": null,
+ 	    "networkname": null
+    },
     "builders": [
         {
             "type": "googlecompute",
-            "project_id": "infra-227411",
+            "project_id": "{{ user `projectid` }}",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
-            "source_image_family": "ubuntu-1604-lts",
+            "source_image_family": "{{ user `sourceimagefamily` }}",
             "zone": "europe-west1-b",
             "ssh_username": "appuser",
-            "machine_type": "f1-micro"
+            "machine_type": "{{ user `machinetype` }}",
+            "image_description": "{{ user `imagedescription` }}",
+            "disk_size": "{{ user `disksize` }}",
+            "disk_type": "{{ user `disktype` }}",
+            "tags": "{{ user `imgtags` }}",
+            "network": "{{ user `networkname` }}"
         }
     ],
     "provisioners": [
