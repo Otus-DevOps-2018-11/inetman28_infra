@@ -3,11 +3,11 @@
 	    "projectid": null,
 	    "sourceimagefamily": null,
 	    "machinetype": null,
-	    "imagedescription": null,
-   	    "disksize": null,
-   	    "disktype": null,
-   	    "imgtags": null,
- 	    "networkname": null
+	    "imagedescription": "",
+   	    "disksize": "10",
+   	    "disktype": "",
+   	    "imgtags": "",
+ 	    "networkname": ""
     },
     "builders": [
         {
