@@ -1,12 +1,6 @@
 # inetman28_infra
 inetman28 Infra repository
 
-# Лабораторная работа №7
-
-Выполнены все задания (исключая задания со *).
-variables.json добавлен в .gitignore
-
-
 # Лабораторная работа №6
 
 Задание №1
