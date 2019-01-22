@@ -1,6 +1,20 @@
 # inetman28_infra
 inetman28 Infra repository
 
+# Лабораторная работа №8
+Выполнены все основые задания.
+
+Были развернуты тестовые VM на основе тестовых images созданных в Packer в лабораторной работе №7. Было запущено приложение "reddit".
+С помощью Terraform я понял основу практики IaC.
+
+Были добавлены след. файлы:
+- main.tf
+- variables.tf
+- terraform.tfvars (terraform.tfvars.example)
+- outputs.tf
+
+В конце лабораторной работы резурсы были "разрушены".
+
 # Лабораторная работа №7
 
 Выполнены все задания (исключая задания со *).
@@ -57,9 +71,3 @@ someinternalhost
 
 # для подключения к someinternalhost с помощью альяса someinternalhost добавить в ~.zshrc строку:
 alias someinternalhost="ssh -J ruslan@35.205.225.172 ruslan@10.132.0.3"
-
-
-
-
-
-
