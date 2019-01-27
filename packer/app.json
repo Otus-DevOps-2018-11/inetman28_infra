@@ -1,0 +1,36 @@
+{
+    "variables": {
+	    "projectid": null,
+	    "sourceimagefamily": null,
+	    "machinetype": null,
+	    "imagedescription": "",
+   	    "disksize": "10",
+   	    "disktype": "",
+   	    "imgtags": "",
+ 	    "networkname": ""
+    },
+    "builders": [
+        {
+            "type": "googlecompute",
+            "project_id": "{{ user `projectid` }}",
+            "image_name": "reddit-app-base",
+            "image_family": "reddit-base",
+            "source_image_family": "{{ user `sourceimagefamily` }}",
+            "zone": "europe-west1-b",
+            "ssh_username": "appuser",
+            "machine_type": "{{ user `machinetype` }}",
+            "image_description": "{{ user `imagedescription` }}",
+            "disk_size": "{{ user `disksize` }}",
+            "disk_type": "{{ user `disktype` }}",
+            "tags": "{{ user `imgtags` }}",
+            "network": "{{ user `networkname` }}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
