@@ -1,0 +1,10 @@
+{
+   "projectid": "infra-227411",
+   "sourceimagefamily": "ubuntu-1604-lts",
+   "machinetype": "f1-micro",
+   "imagedescription": "This is description of image",
+   "disksize": "10",
+   "disktype": "pd-standard",
+   "imgtags": "puma-packer",
+   "networkname": "default"
+}
